@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ModalitiesQuant — Your Data Analysis Tool, From Biology to Markets</title>
+  <meta name="description" content="A unified desktop platform combining protein function prediction, medical genomics, DNA analysis, and Nash-equilibrium market prediction into one powerful tool.">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ═══════════════════════════ NAV ═══════════════════════════ -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <span class="logo-icon">⬡</span>
+      <span class="logo-text">ModalitiesQuant</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#modules">Modules</a></li>
+      <li><a href="#pipeline">How it works</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+    </ul>
+    <a href="#pricing" class="btn btn-nav">Buy Now</a>
+    <button class="nav-burger" id="navBurger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+<section class="hero" id="hero">
+  <canvas id="heroCanvas"></canvas>
+  <div class="hero-inner">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      Desktop · Offline · Open-source ready
+    </div>
+    <h1 class="hero-headline">
+      YOUR DATA<br>ANALYSIS TOOL,<br>
+      <span class="gradient-text">FROM BIOLOGY<br>TO MARKETS</span>
+    </h1>
+    <p class="hero-sub">
+      Protein function prediction · Medical diagnosis · DNA genomics ·<br>
+      Nash-equilibrium market modelling · Live trading platform — in one app.
+    </p>
+    <div class="hero-cta">
+      <a href="#pricing" class="btn btn-primary btn-lg">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        Get Access
+      </a>
+      <a href="#features" class="btn btn-ghost btn-lg">See features ↓</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">6</span><span class="stat-lbl">Analysis modules</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">58+</span><span class="stat-lbl">Medical conditions</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">75+</span><span class="stat-lbl">Genomic variants</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">∞</span><span class="stat-lbl">Assets tradeable</span></div>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ BRIDGE ═══════════════════════════ -->
+<section class="bridge">
+  <div class="bridge-inner">
+    <div class="bridge-label left">🧬 Life Sciences</div>
+    <div class="bridge-track">
+      <div class="bridge-node active" data-tooltip="Protein GO prediction">
+        <div class="bnode-icon">🔬</div>
+      </div>
+      <div class="bridge-line"></div>
+      <div class="bridge-node" data-tooltip="Medical diagnosis">
+        <div class="bnode-icon">🏥</div>
+      </div>
+      <div class="bridge-line"></div>
+      <div class="bridge-node" data-tooltip="DNA &amp; genomics">
+        <div class="bnode-icon">🧬</div>
+      </div>
+      <div class="bridge-line bridge-line-mid"></div>
+      <div class="bridge-node pivot" data-tooltip="Nash TDA bridge">
+        <div class="bnode-icon">⬡</div>
+      </div>
+      <div class="bridge-line bridge-line-mid"></div>
+      <div class="bridge-node" data-tooltip="Market prediction">
+        <div class="bnode-icon">🔮</div>
+      </div>
+      <div class="bridge-line"></div>
+      <div class="bridge-node" data-tooltip="Trading platform">
+        <div class="bnode-icon">💹</div>
+      </div>
+    </div>
+    <div class="bridge-label right">📈 Financial Markets</div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ FEATURES GRID ═══════════════════════════ -->
+<section class="features" id="features">
+  <div class="section-inner">
+    <div class="section-tag">Capabilities</div>
+    <h2 class="section-title">Everything in one<br>native desktop app</h2>
+    <p class="section-sub">No cloud. No subscription. Runs entirely on your machine.</p>
+
+    <div class="feat-grid">
+
+      <div class="feat-card feat-card--accent">
+        <div class="feat-icon">🔬</div>
+        <div class="feat-tag">Bioinformatics</div>
+        <h3>Protein Function Prediction</h3>
+        <p>CAFA-6 pipeline with k-mer similarity and TDA + Random Forest. Predicts Gene Ontology terms across MF, BP, and CC ontologies for any amino acid sequence.</p>
+        <ul class="feat-list">
+          <li>Single protein &amp; batch mode</li>
+          <li>K-mer similarity index</li>
+          <li>Persistent homology features</li>
+          <li>GO hierarchy propagation</li>
+        </ul>
+      </div>
+
+      <div class="feat-card">
+        <div class="feat-icon">🏥</div>
+        <div class="feat-tag">Medicine</div>
+        <h3>Medical Diagnosis Engine</h3>
+        <p>58 conditions, 265 symptoms and 27 lab tests. Weighted differential scoring with severity classification and clinical notes — completely offline.</p>
+        <ul class="feat-list">
+          <li>Symptom / lab / risk intake</li>
+          <li>Differential ranking</li>
+          <li>Lab critical value detection</li>
+          <li>GO → disease bridge</li>
+        </ul>
+      </div>
+
+      <div class="feat-card">
+        <div class="feat-icon">🧬</div>
+        <div class="feat-tag">Genomics</div>
+        <h3>DNA Analysis Suite</h3>
+        <p>From raw nucleotide to clinical insight in seconds. SNP annotation, polygenic risk scores, pharmacogenomics, 6-frame ORF finding and CpG island detection.</p>
+        <ul class="feat-list">
+          <li>75+ curated SNP variants</li>
+          <li>8-trait PRS models</li>
+          <li>CYP2D6, CYP2C19, HLA-B alerts</li>
+          <li>6-frame protein translation</li>
+        </ul>
+      </div>
+
+      <div class="feat-card feat-card--glow">
+        <div class="feat-icon">🔮</div>
+        <div class="feat-tag">Quantitative Finance</div>
+        <h3>Nash-Equilibrium Market Predictor</h3>
+        <p>Vietoris-Rips persistent homology with Nash Equilibrium modulation at every filtration stage. Topological regime detection meets game theory.</p>
+        <ul class="feat-list">
+          <li>Nash-filtered distance matrix</li>
+          <li>H0 / H1 / H2 Betti curves</li>
+          <li>6 market regime classes</li>
+          <li>STRONG BUY → STRONG SELL signal</li>
+        </ul>
+      </div>
+
+      <div class="feat-card">
+        <div class="feat-icon">💹</div>
+        <div class="feat-tag">Trading</div>
+        <h3>Live Trading Platform</h3>
+        <p>Paper-trade with real Yahoo Finance prices or connect to Alpaca Markets. Full order management, portfolio tracking, and one-click signal execution.</p>
+        <ul class="feat-list">
+          <li>Paper broker (no account needed)</li>
+          <li>Alpaca paper &amp; live API</li>
+          <li>Market / limit / stop orders</li>
+          <li>"Execute Signal →" one-click</li>
+        </ul>
+      </div>
+
+      <div class="feat-card">
+        <div class="feat-icon">⚖</div>
+        <div class="feat-tag">Risk</div>
+        <h3>Risk Manager</h3>
+        <p>Position sizing, stop-loss / take-profit calculator, risk/reward ratio, max daily loss limits. Know your numbers before every trade.</p>
+        <ul class="feat-list">
+          <li>Kelly &amp; vol-parity sizing</li>
+          <li>Auto-size from equity %</li>
+          <li>Real-time P&amp;L tracking</li>
+          <li>Portfolio allocation view</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ MODULES DEEP DIVE ═══════════════════════════ -->
+<section class="modules" id="modules">
+  <div class="section-inner">
+    <div class="section-tag">Inside the app</div>
+    <h2 class="section-title">One platform,<br>eight specialisations</h2>
+
+    <div class="module-tabs">
+      <div class="tab-nav">
+        <button class="tab-btn active" data-tab="bio">🧬 Biology</button>
+        <button class="tab-btn" data-tab="med">🏥 Medical</button>
+        <button class="tab-btn" data-tab="fin">📈 Finance</button>
+        <button class="tab-btn" data-tab="trade">💹 Trade</button>
+      </div>
+
+      <div class="tab-content active" id="tab-bio">
+        <div class="tab-pane">
+          <div class="tab-text">
+            <h3>Protein function prediction at scale</h3>
+            <p>Built on the CAFA-6 dataset with a dual-model architecture. The K-mer Similarity model finds structurally similar proteins in milliseconds. The Full Model combines persistent homology (Vietoris-Rips) with Random Forest for deeper predictions.</p>
+            <div class="code-preview">
+              <div class="code-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="code-name">Prediction output</span></div>
+              <pre><code><span class="c-key">GO:0003824</span>  <span class="c-val">catalytic activity</span>         <span class="c-score">0.9241</span>
+<span class="c-key">GO:0016740</span>  <span class="c-val">transferase activity</span>        <span class="c-score">0.8810</span>
+<span class="c-key">GO:0005488</span>  <span class="c-val">binding</span>                     <span class="c-score">0.8503</span>
+<span class="c-key">GO:0044237</span>  <span class="c-val">cellular metabolic process</span>  <span class="c-score">0.7991</span>
+<span class="c-key">GO:0009987</span>  <span class="c-val">cellular process</span>            <span class="c-score">0.7650</span></code></pre>
+            </div>
+          </div>
+          <div class="tab-visual">
+            <div class="visual-card">
+              <div class="vc-label">TDA Pipeline</div>
+              <div class="tda-viz" id="tdaViz"></div>
+              <div class="vc-row"><span>H0 components</span><span class="vc-val green">4</span></div>
+              <div class="vc-row"><span>H1 loops</span><span class="vc-val blue">7</span></div>
+              <div class="vc-row"><span>Betti entropy</span><span class="vc-val amber">1.82</span></div>
+              <div class="vc-row"><span>Persistence</span><span class="vc-val green">0.443</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="tab-med">
+        <div class="tab-pane">
+          <div class="tab-text">
+            <h3>Personalised differential diagnosis</h3>
+            <p>Enter symptoms, lab values and risk factors. The engine scores 58 conditions using a weighted three-layer model (symptoms 45 %, labs 35 %, risk factors 20 %) and ranks them by probability with severity flags.</p>
+            <div class="diag-list">
+              <div class="diag-item diag-high">
+                <div class="diag-bar" style="width:91%"></div>
+                <span class="diag-name">Type 2 Diabetes</span>
+                <span class="diag-score">91%</span>
+              </div>
+              <div class="diag-item diag-med">
+                <div class="diag-bar" style="width:74%"></div>
+                <span class="diag-name">Metabolic Syndrome</span>
+                <span class="diag-score">74%</span>
+              </div>
+              <div class="diag-item diag-low">
+                <div class="diag-bar" style="width:48%"></div>
+                <span class="diag-name">Hypothyroidism</span>
+                <span class="diag-score">48%</span>
+              </div>
+              <div class="diag-item diag-low">
+                <div class="diag-bar" style="width:31%"></div>
+                <span class="diag-name">Cushing's Syndrome</span>
+                <span class="diag-score">31%</span>
+              </div>
+            </div>
+          </div>
+          <div class="tab-visual">
+            <div class="visual-card">
+              <div class="vc-label">Lab Values</div>
+              <div class="lab-row"><span>HbA1c</span><span class="lab-val red">8.2 %</span><span class="lab-flag">↑ HIGH</span></div>
+              <div class="lab-row"><span>Fasting glucose</span><span class="lab-val red">182 mg/dL</span><span class="lab-flag">↑ HIGH</span></div>
+              <div class="lab-row"><span>LDL</span><span class="lab-val amber">142 mg/dL</span><span class="lab-flag">↑ BORDER</span></div>
+              <div class="lab-row"><span>HDL</span><span class="lab-val green">38 mg/dL</span><span class="lab-flag">↓ LOW</span></div>
+              <div class="lab-row"><span>TSH</span><span class="lab-val green">3.2 mIU/L</span><span class="lab-flag">NORMAL</span></div>
+              <div class="lab-row"><span>eGFR</span><span class="lab-val amber">61 mL/min</span><span class="lab-flag">↓ WATCH</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="tab-fin">
+        <div class="tab-pane">
+          <div class="tab-text">
+            <h3>Persistent homology meets Nash Equilibrium</h3>
+            <p>At every filtration step ε<sub>k</sub> the algorithm solves a Nash Equilibrium for the active asset sub-game and uses the NE strategy alignment to modulate the Vietoris-Rips distance matrix. The resulting topology encodes strategic market structure.</p>
+            <div class="code-preview">
+              <div class="code-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="code-name">Nash-filtered VR algorithm</span></div>
+              <pre><code><span class="c-key">for</span> k <span class="c-key">in</span> range(n_stages):
+  ε_k  = k/K · D_max
+  <span class="c-cmt"># solve Nash equilibrium</span>
+  w*   = nash_min_variance(Σ_active)
+  conc = max(w*) · N
+  <span class="c-cmt"># modulate distances</span>
+  <span class="c-key">for</span> (i,j) in active_pairs(ε_k):
+    sim      = tanh(r_i @ w* · r_j @ w*)
+    D_k[i,j] = D[i,j] · (1 − α·conc·sim)
+D_nash = mean(D_k)</code></pre>
+            </div>
+          </div>
+          <div class="tab-visual">
+            <div class="visual-card">
+              <div class="vc-label">Signal Output</div>
+              <div class="signal-box" id="signalBox">STRONG BUY</div>
+              <div class="vc-row"><span>Confidence</span><span class="vc-val green">84%</span></div>
+              <div class="vc-row"><span>Regime</span><span class="vc-val blue">MEAN-REVERSION</span></div>
+              <div class="vc-row"><span>H1 loops</span><span class="vc-val amber">5</span></div>
+              <div class="vc-row"><span>NE concentration</span><span class="vc-val green">0.312</span></div>
+              <div class="vc-row"><span>Nash entropy</span><span class="vc-val amber">1.94</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="tab-trade">
+        <div class="tab-pane">
+          <div class="tab-text">
+            <h3>From signal to execution in one click</h3>
+            <p>The "Execute Signal →" button reads the Nash predictor output, sizes positions using risk parameters, and submits market orders to the paper broker (real Yahoo Finance prices) or directly to Alpaca Markets paper/live API.</p>
+            <div class="trade-flow">
+              <div class="tf-step"><div class="tf-icon">🔮</div><span>Signal generated</span></div>
+              <div class="tf-arrow">→</div>
+              <div class="tf-step"><div class="tf-icon">⚖</div><span>Position sized</span></div>
+              <div class="tf-arrow">→</div>
+              <div class="tf-step"><div class="tf-icon">📤</div><span>Order submitted</span></div>
+              <div class="tf-arrow">→</div>
+              <div class="tf-step active"><div class="tf-icon">✅</div><span>Filled</span></div>
+            </div>
+          </div>
+          <div class="tab-visual">
+            <div class="visual-card">
+              <div class="vc-label">Portfolio</div>
+              <div class="port-row"><span class="port-sym">AAPL</span><span class="port-qty">20 sh</span><span class="port-pl green">+$142.60</span></div>
+              <div class="port-row"><span class="port-sym">MSFT</span><span class="port-qty">15 sh</span><span class="port-pl green">+$89.25</span></div>
+              <div class="port-row"><span class="port-sym">GLD</span><span class="port-qty">30 sh</span><span class="port-pl red">−$23.10</span></div>
+              <div class="port-row"><span class="port-sym">TLT</span><span class="port-qty">50 sh</span><span class="port-pl red">−$41.00</span></div>
+              <div class="port-divider"></div>
+              <div class="port-row total"><span>Total P&amp;L</span><span class="port-pl green">+$167.75</span></div>
+              <div class="port-row total"><span>Cash</span><span class="vc-val">$76,420</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ PIPELINE ═══════════════════════════ -->
+<section class="pipeline" id="pipeline">
+  <div class="section-inner">
+    <div class="section-tag">Architecture</div>
+    <h2 class="section-title">How the pipeline works</h2>
+
+    <div class="pipe-steps">
+      <div class="pipe-step" data-step="1">
+        <div class="ps-num">01</div>
+        <div class="ps-icon">📥</div>
+        <h4>Input</h4>
+        <p>Load protein sequences, DNA strings, variant IDs, patient profiles, or price CSV data from any source.</p>
+      </div>
+      <div class="pipe-arrow">→</div>
+      <div class="pipe-step" data-step="2">
+        <div class="ps-num">02</div>
+        <div class="ps-icon">⚙</div>
+        <h4>Feature Extraction</h4>
+        <p>K-mer embeddings, physico-chemical descriptors, di-peptide composition, persistent homology features, Takens time-delay embedding.</p>
+      </div>
+      <div class="pipe-arrow">→</div>
+      <div class="pipe-step" data-step="3">
+        <div class="ps-num">03</div>
+        <div class="ps-icon">🎯</div>
+        <h4>Nash-TDA Inference</h4>
+        <p>Vietoris-Rips complex with Nash Equilibrium modulation at each filtration stage. Betti curves guide signal generation.</p>
+      </div>
+      <div class="pipe-arrow">→</div>
+      <div class="pipe-step" data-step="4">
+        <div class="ps-num">04</div>
+        <div class="ps-icon">📊</div>
+        <h4>Results + Action</h4>
+        <p>Predictions, diagnoses, risk scores, trading signals — and one-click execution directly to paper or live broker.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ TECH STACK ═══════════════════════════ -->
+<section class="tech">
+  <div class="section-inner">
+    <div class="section-tag">Built with</div>
+    <h2 class="section-title">Open-source<br>at its core</h2>
+    <div class="tech-grid">
+      <div class="tech-item"><span class="tech-name">Python 3.12</span><span class="tech-role">Runtime</span></div>
+      <div class="tech-item"><span class="tech-name">tkinter</span><span class="tech-role">Native UI</span></div>
+      <div class="tech-item"><span class="tech-name">ripser</span><span class="tech-role">Persistent Homology</span></div>
+      <div class="tech-item"><span class="tech-name">scipy</span><span class="tech-role">Nash LP / SLSQP</span></div>
+      <div class="tech-item"><span class="tech-name">scikit-learn</span><span class="tech-role">Random Forest</span></div>
+      <div class="tech-item"><span class="tech-name">numpy</span><span class="tech-role">Vectorised math</span></div>
+      <div class="tech-item"><span class="tech-name">Yahoo Finance</span><span class="tech-role">Live prices</span></div>
+      <div class="tech-item"><span class="tech-name">Alpaca API</span><span class="tech-role">Order execution</span></div>
+      <div class="tech-item"><span class="tech-name">PyInstaller</span><span class="tech-role">Packaging</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ ABOUT ═══════════════════════════ -->
+<section class="about" id="about">
+  <div class="section-inner">
+    <div class="section-tag">Creator</div>
+    <div class="about-card">
+
+      <div class="about-avatar">
+        <div class="avatar-ring">
+          <img src="ZAKARIA-LAMINE.jpg"
+               alt="Dr. Zakaria Lamine"
+               class="avatar-photo"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="avatar-initials" style="display:none;">ZL</div>
+        </div>
+        <div class="avatar-badge">PhD</div>
+      </div>
+
+      <div class="about-body">
+        <div class="about-name-row">
+          <h2 class="about-name">Dr. Zakaria Lamine</h2>
+          <span class="about-degree">PhD · Applied Mathematics</span>
+        </div>
+
+        <p class="about-bio">
+          Zakaria Lamine is an applied mathematician whose research bridges
+          <strong>topological data analysis</strong>, <strong>game theory</strong>,
+          and <strong>computational biology</strong>. His doctoral work formalised
+          the use of persistent homology for high-dimensional biological sequence
+          analysis, leading to the Nash-filtered Vietoris-Rips pipeline at the
+          core of ModalitiesQuant.
+        </p>
+        <p class="about-bio">
+          Frustrated by the fragmentation of bioinformatics, clinical genomics, and
+          quantitative finance tooling across dozens of incompatible platforms, he
+          designed ModalitiesQuant as a single coherent desktop environment — from
+          protein GO prediction to live order execution — grounded in rigorous
+          mathematics.
+        </p>
+
+        <div class="about-expertise">
+          <div class="exp-tag">Persistent Homology</div>
+          <div class="exp-tag">Nash Equilibrium Theory</div>
+          <div class="exp-tag">Computational Genomics</div>
+          <div class="exp-tag">Quantitative Finance</div>
+          <div class="exp-tag">Machine Learning</div>
+          <div class="exp-tag">Topological Data Analysis</div>
+          <div class="exp-tag">Differential Geometry</div>
+          <div class="exp-tag">Stochastic Processes</div>
+        </div>
+
+        <div class="about-links">
+          <a href="mailto:zakarialamine2@gmail.com" class="about-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            zakarialamine2@gmail.com
+          </a>
+          <a href="https://wa.me/212663357520" target="_blank" rel="noopener" class="about-link about-link--wa">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.85L0 24l6.304-1.507A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.001-1.371l-.359-.214-3.724.889.924-3.638-.234-.374A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+            +212 663 35 75 20
+          </a>
+        </div>
+      </div>
+
+      <div class="about-stats-col">
+        <div class="astat">
+          <span class="astat-num">13+</span>
+          <span class="astat-lbl">Years in mathematics</span>
+        </div>
+        <div class="astat">
+          <span class="astat-num">6</span>
+          <span class="astat-lbl">Platform modules</span>
+        </div>
+        <div class="astat">
+          <span class="astat-num">∞</span>
+          <span class="astat-lbl">Curiosity</span>
+        </div>
+        <div class="astat-quote">
+          "Mathematics is the language nature uses to keep its secrets — and the only tool precise enough to decode them."
+        </div>
+      </div>
+
+    </div><!-- /about-card -->
+
+    <!-- ── Education & Career Timeline ── -->
+    <div class="about-timeline-section">
+      <h3>📋 Education &amp; Career</h3>
+      <div class="timeline">
+
+        <div class="tl-item">
+          <div class="tl-year">2019 – Present</div>
+          <div class="tl-title">Research &amp; Development — Topological Methods in Biology &amp; Finance</div>
+          <div class="tl-org">Independent Research · ModalitiesQuant</div>
+          <div class="tl-desc">
+            Ongoing research applying persistent homology, game theory, and
+            machine learning to biological sequence analysis and quantitative finance.
+            Developed the Nash-filtered Vietoris-Rips pipeline, polygenic risk score
+            models, and pharmacogenomics annotation frameworks. Culminated in the
+            design and full implementation of the ModalitiesQuant platform — integrating
+            CAFA-6 protein prediction, medical diagnosis, DNA analysis, and live
+            algorithmic trading into a single offline desktop environment.
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-year">PhD</div>
+          <div class="tl-title">PhD — Applied Mathematics</div>
+          <div class="tl-org">Doctoral Research</div>
+          <div class="tl-desc">
+            Dissertation: <em>"Persistent Diagrams: A Convenient Tool for Proteins
+            Structures/Functions Analysis and Prediction."</em>
+            Developed original theoretical frameworks at the intersection of algebraic
+            topology and computational biology — establishing persistent homology as a
+            rigorous mathematical instrument for protein structure and function analysis.
+            Solved key modality problems arising in the topological representation of
+            biomolecular data, and provided new theoretical foundations for applied
+            mathematics in the life sciences: cohomological invariants of protein
+            complexes, birth-death persistence for structural feature extraction,
+            and formal convergence proofs for diagram-based predictors.
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-year">2016 – 2019</div>
+          <div class="tl-title">MSc — Bioinformatics / Biomathematics</div>
+          <div class="tl-org">Graduate Studies</div>
+          <div class="tl-desc">
+            Specialisation at the interface of mathematics and life sciences: mathematical
+            modelling of biological systems, sequence analysis, structural bioinformatics,
+            stochastic differential equations in population dynamics, and topological
+            methods for genomic data. Master's thesis on persistent homology applied to
+            protein interaction networks. Graduated with distinction.
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-year">2011 – 2016</div>
+          <div class="tl-title">BSc — Applied Mathematics</div>
+          <div class="tl-org">Undergraduate Studies</div>
+          <div class="tl-desc">
+            Five-year programme covering real and functional analysis, abstract algebra,
+            differential geometry, probability theory, numerical methods, and optimisation.
+            Undergraduate capstone project: Approximation of hypergeometric series and
+            functions using Padé methods — rational approximants, convergence analysis,
+            and numerical implementation. First-class honours.
+          </div>
+        </div>
+
+      </div>
+    </div><!-- /timeline -->
+
+    <!-- ── Publications & Skills ── -->
+    <div class="about-two-col">
+
+      <div class="research-card">
+        <h3>📄 Publications</h3>
+
+        <!-- Journal articles -->
+        <div class="pub-section-label">Peer-reviewed Journals</div>
+
+        <div class="pub-item">
+          <div class="pub-num">1</div>
+          <div class="pub-info">
+            <a class="pub-title" href="https://etamaths.com/index.php/ijaa/article/view/2944" target="_blank" rel="noopener">
+              A Topological Data Analysis of the Protein Structure
+            </a>
+            <div class="pub-venue">
+              <span class="pub-journal">International Journal of Analysis and Applications</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-num">2</div>
+          <div class="pub-info">
+            <a class="pub-title" href="https://scik.org/index.php/cmbn/article/view/8213" target="_blank" rel="noopener">
+              A Topological Approach for Analyzing the Protein Structure
+            </a>
+            <div class="pub-venue">
+              <span class="pub-journal">Communications in Mathematical Biology and Neuroscience</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-num">3</div>
+          <div class="pub-info">
+            <a class="pub-title" href="https://ojs.wiserpub.com/index.php/CM/article/view/5921" target="_blank" rel="noopener">
+              Artificial Intelligence Model Based on Algebraic Topology for Protein Structure Analysis and Prediction
+            </a>
+            <div class="pub-venue">
+              <span class="pub-journal">Contemporary Mathematics</span> · WISERPUB
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-num">4</div>
+          <div class="pub-info">
+            <a class="pub-title" href="https://www.aimspress.com/journal/nhm" target="_blank" rel="noopener">
+              Mathematical Insights into Protein Architecture: Persistent Homology and Machine Learning Applied to the Flagellar Motor
+            </a>
+            <div class="pub-venue">
+              <span class="pub-journal">Networks and Heterogeneous Media</span> · AIMS Press
+              <span class="pub-badge pub-badge--review">Under Review</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Preprints -->
+        <div class="pub-section-label">Preprints</div>
+
+        <div class="pub-item">
+          <div class="pub-num">5</div>
+          <div class="pub-info">
+            <a class="pub-title" href="https://www.researchsquare.com/article/rs-4233092/v1" target="_blank" rel="noopener">
+              Persistent Diagrams for Protein Structure Prediction
+            </a>
+            <div class="pub-venue">
+              <span class="pub-journal">Research Square</span> · Preprint
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-num">6</div>
+          <div class="pub-info">
+            <a class="pub-title" href="https://arxiv.org/search/?query=ZAKARIA+LAMINE&searchtype=author" target="_blank" rel="noopener">
+              Mathematical Modeling of Protein Structures: A Cohomology-Based Approach to the Flagellar Motor
+            </a>
+            <div class="pub-venue">
+              <span class="pub-journal">arXiv</span> · Preprint
+            </div>
+          </div>
+        </div>
+
+        <!-- Books -->
+        <div class="pub-section-label">Books</div>
+
+        <div class="pub-item pub-item--book">
+          <div class="pub-book-icon">📘</div>
+          <div class="pub-info">
+            <div class="pub-title">Mathematical Insights into Protein Architectures — Tome 1</div>
+            <div class="pub-venue">
+              <span class="pub-journal">Lamine, Z.</span>
+              <span class="pub-badge pub-badge--book">Book</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-item pub-item--book">
+          <div class="pub-book-icon">📗</div>
+          <div class="pub-info">
+            <div class="pub-title">Mathematical Insights into Protein Architectures — Tome 2</div>
+            <div class="pub-venue">
+              <span class="pub-journal">Lamine, Z.</span>
+              <span class="pub-badge pub-badge--book">Book</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Thesis & reports -->
+        <div class="pub-section-label">Thesis &amp; Academic Reports</div>
+
+        <div class="pub-item">
+          <div class="pub-num">✦</div>
+          <div class="pub-info">
+            <div class="pub-title">Persistent Homology in Detection of Protein Features</div>
+            <div class="pub-venue">
+              MSc Thesis · Supervisor: <strong>Prof. MyIsmail Mamouni</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-num">✦</div>
+          <div class="pub-info">
+            <div class="pub-title">Other Academic Reports &amp; Student Projects</div>
+            <div class="pub-venue">
+              Approximation of APPELL Hypergeometric Function via Padé Method (2015) ·
+              Hidden Markov Models in R · Solution of Linear Systems in Python
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /publications -->
+
+      <div class="research-card">
+        <h3>⚡ Technical Skills</h3>
+
+        <div class="skill-row">
+          <div class="skill-label"><span>Topological Data Analysis</span><span>Expert</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" style="--w:97%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span>Python (numpy · scipy · sklearn)</span><span>Expert</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" style="--w:95%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span>Nash Equilibrium &amp; Game Theory</span><span>Expert</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" style="--w:96%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span>Computational Genomics &amp; Bioinformatics</span><span>Advanced</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" style="--w:88%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span>Quantitative Finance &amp; Risk Modelling</span><span>Advanced</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" style="--w:85%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span>Machine Learning (RF · SVM · DL)</span><span>Advanced</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" style="--w:83%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span>Differential Geometry &amp; Manifold Theory</span><span>Advanced</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" style="--w:82%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span>Desktop App Development (tkinter · PyInstaller)</span><span>Proficient</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" style="--w:78%"></div></div>
+        </div>
+
+        <div style="margin-top:20px; padding-top:16px; border-top:1px solid var(--border);">
+          <div class="about-expertise" style="margin-bottom:0">
+            <div class="exp-tag">French</div>
+            <div class="exp-tag">English</div>
+            <div class="exp-tag">Arabic</div>
+          </div>
+        </div>
+      </div><!-- /skills -->
+
+    </div><!-- /two-col -->
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════ PRICING ═══════════════════════════ -->
+<section class="pricing" id="pricing">
+  <div class="section-inner">
+    <div class="section-tag">Pricing</div>
+    <h2 class="section-title">One purchase.<br>Yours forever.</h2>
+    <p class="section-sub">No subscriptions. No recurring fees. Pay once, own the licence permanently.</p>
+
+    <div class="plans-grid">
+
+      <!-- Essential -->
+      <div class="plan-card">
+        <div class="plan-header">
+          <div class="plan-icon">🔬</div>
+          <div class="plan-name">Essential</div>
+          <div class="plan-tagline">Life Sciences suite</div>
+        </div>
+        <div class="plan-price-wrap">
+          <div class="plan-price">
+            <span class="price-currency">$</span>
+            <span class="price-amount">299</span>
+          </div>
+          <div class="plan-billed">One-time · perpetual licence</div>
+        </div>
+        <button class="btn btn-ghost btn-plan" onclick="openCheckout('essential')">Buy Essential</button>
+        <ul class="plan-features">
+          <li class="pf-yes">Protein Function Prediction (CAFA-6)</li>
+          <li class="pf-yes">Single &amp; batch analysis</li>
+          <li class="pf-yes">Medical Diagnosis Engine</li>
+          <li class="pf-yes">58 conditions · 265 symptoms</li>
+          <li class="pf-yes">DNA Analysis Suite</li>
+          <li class="pf-yes">75+ curated SNP variants</li>
+          <li class="pf-yes">Protein-Disease Link tab</li>
+          <li class="pf-yes">Offline · no data leaves device</li>
+          <li class="pf-no">Market Predictor</li>
+          <li class="pf-no">Trading Platform</li>
+          <li class="pf-no">Risk Manager</li>
+          <li class="pf-no">Alpaca broker integration</li>
+        </ul>
+      </div>
+
+      <!-- Professional — featured -->
+      <div class="plan-card plan-card--featured">
+        <div class="plan-badge">Most Popular</div>
+        <div class="plan-header">
+          <div class="plan-icon">🔮</div>
+          <div class="plan-name">Professional</div>
+          <div class="plan-tagline">Full platform · Biology + Markets</div>
+        </div>
+        <div class="plan-price-wrap">
+          <div class="plan-price">
+            <span class="price-currency">$</span>
+            <span class="price-amount">699</span>
+          </div>
+          <div class="plan-billed">One-time · perpetual licence</div>
+        </div>
+        <button class="btn btn-primary btn-plan" onclick="openCheckout('professional')">Buy Professional</button>
+        <ul class="plan-features">
+          <li class="pf-yes">Everything in Essential</li>
+          <li class="pf-yes">Nash-Equilibrium Market Predictor</li>
+          <li class="pf-yes">6 market regime classifications</li>
+          <li class="pf-yes">Persistent Homology (H0/H1/H2)</li>
+          <li class="pf-yes">STRONG BUY → STRONG SELL signal</li>
+          <li class="pf-yes">Live Trading Platform</li>
+          <li class="pf-yes">Paper broker (real Yahoo prices)</li>
+          <li class="pf-yes">Alpaca paper &amp; live API</li>
+          <li class="pf-yes">Position sizer &amp; Risk Manager</li>
+          <li class="pf-yes">Order history &amp; portfolio tracker</li>
+          <li class="pf-yes">Priority email support</li>
+          <li class="pf-yes">All future updates included</li>
+        </ul>
+      </div>
+
+      <!-- Enterprise -->
+      <div class="plan-card">
+        <div class="plan-header">
+          <div class="plan-icon">🏛</div>
+          <div class="plan-name">Enterprise</div>
+          <div class="plan-tagline">Teams &amp; institutions</div>
+        </div>
+        <div class="plan-price-wrap">
+          <div class="plan-price plan-price--custom">
+            <span class="price-custom">Custom</span>
+          </div>
+          <div class="plan-billed">Volume seat pricing</div>
+        </div>
+        <a href="mailto:zakarialamine2@gmail.com?subject=ModalitiesQuant%20Enterprise%20enquiry" class="btn btn-ghost btn-plan">Contact Sales</a>
+        <ul class="plan-features">
+          <li class="pf-yes">Everything in Professional</li>
+          <li class="pf-yes">Unlimited seats / machines</li>
+          <li class="pf-yes">On-premise deployment</li>
+          <li class="pf-yes">Custom data pipeline integration</li>
+          <li class="pf-yes">White-label option</li>
+          <li class="pf-yes">Source code licence</li>
+          <li class="pf-yes">Dedicated Slack channel</li>
+          <li class="pf-yes">SLA &amp; onboarding sessions</li>
+          <li class="pf-yes">Custom module development</li>
+          <li class="pf-yes">Annual invoicing available</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Licence terms banner -->
+    <div class="oto-banner">
+      <div class="oto-icon">⚡</div>
+      <div class="oto-text">
+        <strong>What "perpetual" means here.</strong>
+        One payment, one licence key, yours permanently — the version you buy never stops working. All updates for 2 years are included.
+      </div>
+      <a href="mailto:zakarialamine2@gmail.com" class="btn btn-ghost">Questions? Email us →</a>
+    </div>
+
+    <!-- Contact bar -->
+    <div class="contact-bar">
+      <a href="mailto:zakarialamine2@gmail.com" class="contact-bar-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        zakarialamine2@gmail.com
+      </a>
+      <div class="contact-bar-sep"></div>
+      <a href="https://wa.me/212663357520" target="_blank" rel="noopener" class="contact-bar-item contact-bar-item--wa">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        +212 663 35 75 20
+      </a>
+      <div class="contact-bar-sep"></div>
+      <a href="https://wa.me/212663357520?text=Hello%20Dr.%20Lamine%2C%20I%27m%20interested%20in%20ModalitiesQuant." target="_blank" rel="noopener" class="contact-bar-item contact-bar-item--wa contact-bar-cta">
+        Message on WhatsApp →
+      </a>
+    </div>
+
+    <!-- Payment methods -->
+    <div class="payment-section">
+      <div class="payment-header">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+        Payment Methods
+      </div>
+
+      <div class="payment-grid">
+
+        <!-- PayPal -->
+        <div class="pay-card">
+          <div class="pay-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 11l5 5 5-5"/><path d="M12 4v12"/><rect x="2" y="16" width="20" height="4" rx="1"/></svg>
+          </div>
+          <div class="pay-card-body">
+            <div class="pay-card-title">PayPal</div>
+            <div class="pay-card-sub">Send to <strong>zakarialamine2@gmail.com</strong></div>
+          </div>
+          <button class="pay-card-badge pay-card-badge--btn" onclick="openCheckout('professional','paypal')">Pay now →</button>
+        </div>
+
+      </div><!-- /payment-grid -->
+
+    </div><!-- /payment-section -->
+
+    <!-- Trust row -->
+    <div class="trust-row">
+      <div class="trust-item">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+        Secure checkout via PayPal
+      </div>
+      <div class="trust-item">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        30-day money-back guarantee
+      </div>
+      <div class="trust-item">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        Windows 10/11 installer included
+      </div>
+      <div class="trust-item">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        Licence key delivered after payment confirmation
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ DOWNLOAD (licensed users) ═══════════════════════════ -->
+<section class="download" id="download">
+  <div class="section-inner">
+    <div class="dl-card">
+      <div class="dl-left">
+        <div class="dl-glyph">⬡</div>
+        <h2>Download<br>ModalitiesQuant</h2>
+        <p>Download it now and try the installer. It runs once you enter the licence from your purchase email — and after that, entirely offline, forever.</p>
+        <div class="licence-input-wrap">
+          <a href="#" class="btn btn-primary btn-lg" id="downloadBtn" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download for Windows &nbsp;·&nbsp; 194 MB
+          </a>
+        </div>
+        <p class="dl-note licence-msg" id="licenceMsg">Free to download. A licence is required to run it — your licence arrives by email after payment.</p>
+      </div>
+      <div class="dl-right">
+        <div class="dl-features">
+          <div class="dl-feat"><span class="dlf-icon">✓</span>Runs 100% offline</div>
+          <div class="dl-feat"><span class="dlf-icon">✓</span>No data collection</div>
+          <div class="dl-feat"><span class="dlf-icon">✓</span>CAFA-6 dataset bundled</div>
+          <div class="dl-feat"><span class="dlf-icon">✓</span>Paper trading out of the box</div>
+          <div class="dl-feat"><span class="dlf-icon">✓</span>Alpaca broker integration</div>
+          <div class="dl-feat"><span class="dlf-icon">✓</span>Windows 10 / 11 native</div>
+          <div class="dl-feat"><span class="dlf-icon">✓</span>Single-folder install</div>
+          <div class="dl-feat"><span class="dlf-icon">✓</span>Updates pushed automatically</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="logo-icon">⬡</span>
+      <span class="logo-text">ModalitiesQuant</span>
+    </div>
+    <p class="footer-tag">Your Data Analysis Tool — From Biology to Markets</p>
+    <div class="footer-links">
+      <a href="#features">Features</a>
+      <a href="#modules">Modules</a>
+      <a href="#pipeline">Pipeline</a>
+      <a href="#about">About</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#download">Download</a>
+    </div>
+    <p class="footer-copy">© 2025 ModalitiesQuant · Dr. Zakaria Lamine, PhD Applied Mathematics · Built with Python, ripser, scipy &amp; Nash Equilibrium theory.</p>
+  </div>
+</footer>
+
+<script src="out_script.js"></script>
+
+<!-- ═══════════════════════ CHECKOUT MODAL ═══════════════════════ -->
+<div id="checkoutModal" class="co-overlay" role="dialog" aria-modal="true" aria-labelledby="coTitle" onclick="if(event.target===this)closeCheckout()">
+  <div class="co-modal">
+
+    <!-- Header -->
+    <div class="co-header">
+      <div>
+        <div class="co-tag">Secure Checkout</div>
+        <h2 class="co-title" id="coTitle">Complete your purchase</h2>
+      </div>
+      <button class="co-close" onclick="closeCheckout()" aria-label="Close">✕</button>
+    </div>
+
+    <!-- Plan summary -->
+    <div class="co-plan-summary">
+      <div class="co-plan-icon" id="coPlanIcon">🔮</div>
+      <div class="co-plan-info">
+        <div class="co-plan-name" id="coPlanName">Professional</div>
+        <div class="co-plan-price" id="coPlanPrice">$699 one-time · perpetual licence</div>
+      </div>
+    </div>
+
+    <!-- Payment methods -->
+    <div class="co-methods-label">Choose payment method</div>
+    <div class="co-methods">
+
+      <!-- PayPal -->
+      <button class="co-method-btn" id="coPaypalBtn" onclick="payPayPal()">
+        <span class="co-method-icon co-method-icon--pp">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7.076 21.337H2.47a.641.641 0 01-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106zm14.146-14.42a3.35 3.35 0 00-.607-.541c-.013.076-.026.175-.041.254-.93 4.778-4.005 7.201-9.138 7.201h-2.19a.563.563 0 00-.556.479l-1.187 7.527h-.506l-.24 1.516a.56.56 0 00.554.647h3.882c.46 0 .85-.334.922-.788.06-.26.76-4.852.816-5.09a.932.932 0 01.923-.788h.58c3.76 0 6.705-1.528 7.565-5.946.36-1.847.174-3.388-.78-4.471z"/></svg>
+        </span>
+        <span class="co-method-body">
+          <span class="co-method-title">PayPal</span>
+          <span class="co-method-sub">Pay via PayPal to zakarialamine2@gmail.com</span>
+        </span>
+        <span class="co-method-badge">Secure</span>
+        <span class="co-method-arrow">→</span>
+      </button>
+
+
+    </div><!-- /co-methods -->
+
+    <!-- Trust badges -->
+    <div class="co-trust">
+      <span>🔒 256-bit SSL</span>
+      <span>📄 Invoice provided</span>
+      <span>🔄 30-day money-back guarantee</span>
+      <span>✉️ Licence key by email after payment confirmation</span>
+    </div>
+
+  </div>
+</div>
+
+<script>
+// ── Checkout data ────────────────────────────────────────────────────────────
+// One-time perpetual licences. `amount` is the ACTUAL sum charged by PayPal —
+// it must always equal the price rendered in the pricing cards above.
+const PLANS = {
+  essential: {
+    icon: '🔬', name: 'Essential',
+    sku: 'MQ-ESSENTIAL-PERPETUAL',
+    amount: 299,
+    label: '$299 one-time · perpetual licence',
+  },
+  professional: {
+    icon: '🔮', name: 'Professional',
+    sku: 'MQ-PROFESSIONAL-PERPETUAL',
+    amount: 699,
+    label: '$699 one-time · perpetual licence',
+  },
+};
+
+// ── PayPal environment ───────────────────────────────────────────────────────
+// Flip this one flag to test against the sandbox. Both the checkout host and
+// the receiving account have to change together: sending a sandbox buyer to
+// live PayPal charges real money, and sending a live buyer to the sandbox
+// takes none. Keeping them in one place is the only way that stays true.
+//
+// The server must agree — set MQ_PAYPAL_IPN_VERIFY_URL to the matching host
+// and MQ_PAYPAL_RECEIVER_EMAIL to the address below, or every IPN is
+// discarded as "not ours" and no licence is issued.
+// Currently SANDBOX, matching MQ_PAYPAL_IPN_VERIFY_URL in the server env.
+// Going live means flipping BOTH, in the same deploy:
+//   here                     PAYPAL_SANDBOX = false
+//   /etc/modalitiesquant/env MQ_PAYPAL_IPN_VERIFY_URL=https://ipnpb.paypal.com/cgi-bin/webscr
+//                            MQ_PAYPAL_RECEIVER_EMAIL=<the live account>
+// deploy/check_consistency.py fails if they disagree, which is the point:
+// a live checkout verified against the sandbox never returns VERIFIED, so
+// every payment is taken and silently discarded.
+const PAYPAL_SANDBOX = true;
+
+const PAYPAL_EMAIL = PAYPAL_SANDBOX
+  ? 'sb-seller@business.example.com'      // your sandbox business account
+  : 'zakarialamine2@gmail.com';
+
+const PAYPAL_HOST = PAYPAL_SANDBOX
+  ? 'https://www.sandbox.paypal.com'
+  : 'https://www.paypal.com';
+
+// Where the site itself lives, and where the installer is published.
+// DOWNLOAD_URL must point at the release asset, not the release page, so the
+// button downloads instead of opening GitHub.
+const SITE_BASE    = 'https://modalitiesquant.com';
+const DOWNLOAD_URL = 'https://github.com/CHANGE_ME/modalitiesquant/releases/latest/download/ModalitiesQuant.zip';
+
+document.addEventListener('DOMContentLoaded', () => {
+  const b = document.getElementById('downloadBtn');
+  if (b) b.href = DOWNLOAD_URL;
+});
+
+let _plan = 'professional';
+
+function openCheckout(plan, method) {
+  _plan = PLANS[plan] ? plan : 'professional';
+  _renderModal();
+  document.getElementById('checkoutModal').classList.add('co-overlay--open');
+  document.body.style.overflow = 'hidden';
+  if (method === 'paypal') {
+    setTimeout(() => {
+      const btn = document.getElementById('coPaypalBtn');
+      if (btn) btn.focus();
+    }, 200);
+  }
+}
+
+function closeCheckout() {
+  document.getElementById('checkoutModal').classList.remove('co-overlay--open');
+  document.body.style.overflow = '';
+}
+
+function _renderModal() {
+  const p = PLANS[_plan];
+  document.getElementById('coPlanIcon').textContent  = p.icon;
+  document.getElementById('coPlanName').textContent  = p.name;
+  document.getElementById('coPlanPrice').textContent = p.label;
+}
+
+function payPayPal() {
+  const p = PLANS[_plan];
+  const q = new URLSearchParams({
+    cmd:           '_xclick',
+    business:      PAYPAL_EMAIL,
+    item_name:     `ModalitiesQuant ${p.name} — perpetual licence`,
+    item_number:   p.sku,
+    amount:        p.amount.toFixed(2),
+    currency_code: 'USD',
+    no_shipping:   '1',          // digital goods — don't ask for an address
+    no_note:       '1',
+    // No notify_url: there is no server to call. PayPal emails the sale to the
+    // account owner, who issues the licence with
+    //     python purchase_to_license.py sell --email ... --txn ...
+    // and replies with it. Manual on purpose — it removes every piece of
+    // infrastructure that could be down when someone is trying to pay.
+    return:        `${SITE_BASE}/thanks.html`,
+    cancel_return: `${location.origin}${location.pathname}#pricing`,
+    custom:        p.sku,
+  });
+  window.location.assign(`${PAYPAL_HOST}/cgi-bin/webscr?${q.toString()}`);
+}
+
+// Close on Escape
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeCheckout(); });
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Thank you — ModalitiesQuant</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<style>
+  body { background:#060b14; color:#e3eaf2;
+         font:16px/1.65 "Segoe UI", system-ui, sans-serif;
+         display:grid; place-items:center; min-height:100vh; margin:0; padding:24px }
+  .card { max-width:560px; text-align:center }
+  .glyph { font-size:44px; color:#4fc3f7; margin-bottom:8px }
+  h1 { font-size:27px; margin:0 0 14px; font-weight:600 }
+  p { color:#b0bec5; margin:0 0 16px }
+  .steps { text-align:left; background:#0d1726; border:1px solid #16293f;
+           border-radius:10px; padding:20px 24px; margin:24px 0 }
+  .steps li { margin:10px 0; color:#cfd8dc }
+  .muted { font-size:14px; color:#78909c }
+  a { color:#4fc3f7 }
+  .dl { display:inline-block; background:#4fc3f7; color:#04121f; font-weight:600;
+        text-decoration:none; padding:12px 26px; border-radius:8px; margin-top:4px }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="glyph">⬡</div>
+  <h1>Payment received — thank you</h1>
+
+  <p>Your licence is being prepared and will arrive by email, usually within a
+     few hours and always within one working day.</p>
+
+  <div class="steps">
+    <strong>What happens next</strong>
+    <ol class="steps">
+      <li>You get an email containing your licence — a long block of text
+          beginning <code>MQ1.</code></li>
+      <li>Download ModalitiesQuant below if you have not already.</li>
+      <li>Run it, paste the licence when asked, and you are done.</li>
+    </ol>
+    <p class="muted" style="margin:0">After that it never contacts us again.
+       It runs with no internet connection, permanently.</p>
+  </div>
+
+  <a class="dl" id="dl" href="#">Download for Windows · 194 MB</a>
+
+  <p class="muted" style="margin-top:26px">
+     Nothing after one working day? Check your spam folder, then email
+     <a href="mailto:zakarialamine2@gmail.com">zakarialamine2@gmail.com</a>
+     with your PayPal transaction ID and we will sort it out straight away.</p>
+
+  <p class="muted"><a href="/">← Back to modalitiesquant.com</a></p>
+</div>
+
+<script>
+  // Keep this in step with DOWNLOAD_URL in index.html.
+  document.getElementById('dl').href =
+    'https://github.com/CHANGE_ME/modalitiesquant/releases/latest/download/ModalitiesQuant.zip';
+</script>
+</body>
+</html>

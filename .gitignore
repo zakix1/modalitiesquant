@@ -1,0 +1,12 @@
+# Internal operator notes — not for the public site repo
+PUBLISHING.md
+
+# OS / editor noise
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+*.swp
+*~
+.vscode/
+.idea/
