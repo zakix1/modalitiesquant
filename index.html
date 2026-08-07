@@ -1044,32 +1044,40 @@ const PLANS = {
 // live PayPal charges real money, and sending a live buyer to the sandbox
 // takes none. Keeping them in one place is the only way that stays true.
 //
-// The server must agree — set MQ_PAYPAL_IPN_VERIFY_URL to the matching host
-// and MQ_PAYPAL_RECEIVER_EMAIL to the address below, or every IPN is
-// discarded as "not ours" and no licence is issued.
-// Currently SANDBOX, matching MQ_PAYPAL_IPN_VERIFY_URL in the server env.
-// Going live means flipping BOTH, in the same deploy:
-//   here                     PAYPAL_SANDBOX = false
-//   /etc/modalitiesquant/env MQ_PAYPAL_IPN_VERIFY_URL=https://ipnpb.paypal.com/cgi-bin/webscr
-//                            MQ_PAYPAL_RECEIVER_EMAIL=<the live account>
-// deploy/check_consistency.py fails if they disagree, which is the point:
-// a live checkout verified against the sandbox never returns VERIFIED, so
-// every payment is taken and silently discarded.
-const PAYPAL_SANDBOX = true;
+// LIVE PayPal. Real money, from the first click.
+//
+// There is deliberately no sandbox switch here. A sandbox checkout can only
+// pay a sandbox test account, which is a separate universe from the live one —
+// a real address pasted into a sandbox button is simply an account that does
+// not exist there. Carrying a flag that is broken in one of its two positions
+// is worse than not carrying it: sooner or later it gets flipped and every
+// payment goes nowhere.
+//
+// There is also no server listening for IPN. PayPal emails the sale, and the
+// licence is issued by hand — see SELLING.md.
+const PAYPAL_EMAIL = 'zakarialamine2@gmail.com';
+const PAYPAL_HOST  = 'https://www.paypal.com';
 
-const PAYPAL_EMAIL = PAYPAL_SANDBOX
-  ? 'sb-seller@business.example.com'      // your sandbox business account
-  : 'zakarialamine2@gmail.com';
-
-const PAYPAL_HOST = PAYPAL_SANDBOX
-  ? 'https://www.sandbox.paypal.com'
-  : 'https://www.paypal.com';
+// Before announcing the site, click Buy and stop at PayPal's page WITHOUT
+// paying. It should read "ModalitiesQuant Professional — perpetual licence",
+// $699.00 USD, payable to the address above. That costs nothing and proves
+// every field below except the return redirect.
+//
+// You cannot rehearse the whole thing alone: PayPal refuses a payment from an
+// account to itself, so you cannot buy your own product.
 
 // Where the site itself lives, and where the installer is published.
+//
+// SITE_BASE is what PayPal sends the buyer back to after paying, so it has to
+// be an address that actually serves thanks.html — an absolute URL, because
+// PayPal is off-site by then and has no page to be relative to. No trailing
+// slash: `${SITE_BASE}/thanks.html` adds it.
+//
 // DOWNLOAD_URL must point at the release asset, not the release page, so the
-// button downloads instead of opening GitHub.
-const SITE_BASE    = 'https://modalitiesquant.com';
-const DOWNLOAD_URL = 'https://github.com/CHANGE_ME/modalitiesquant/releases/latest/download/ModalitiesQuant.zip';
+// button downloads instead of opening GitHub. /latest/ keeps it valid across
+// new releases.
+const SITE_BASE    = 'https://zakix1.github.io/modalitiesquant';
+const DOWNLOAD_URL = 'https://github.com/zakix1/modalitiesquant/releases/latest/download/ModalitiesQuant.zip';
 
 document.addEventListener('DOMContentLoaded', () => {
   const b = document.getElementById('downloadBtn');
