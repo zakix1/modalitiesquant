@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64"
+     role="img" aria-label="ModalitiesQuant">
+  <!-- Small-size mark. The helix and candlesticks are dropped on purpose: below
+       about 48px they collapse into noise. Pentagon, hexagon, rising line — the
+       three shapes that still read at 16px. -->
+  <defs>
+    <linearGradient id="mqFavEdge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00c6ff"/><stop offset="1" stop-color="#1e88e5"/>
+    </linearGradient>
+  </defs>
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <polygon points="32,3 59.58,23.04 49.05,55.46 14.95,55.46 4.42,23.04"
+             stroke="url(#mqFavEdge)" stroke-width="3.6"/>
+    <g fill="#00c6ff" stroke="none">
+      <circle cx="32" cy="3" r="3.2"/><circle cx="59.58" cy="23.04" r="3.2"/>
+      <circle cx="49.05" cy="55.46" r="3.2"/><circle cx="14.95" cy="55.46" r="3.2"/>
+      <circle cx="4.42" cy="23.04" r="3.2"/>
+    </g>
+    <polygon points="32,12 49.32,22 49.32,42 32,52 14.68,42 14.68,22"
+             stroke="#7fdcff" stroke-width="2.8"/>
+    <path d="M18 41 L27 33 L34 39 L44.5 25.5" stroke="#00e676" stroke-width="3.8"/>
+    <circle cx="45" cy="25" r="3.6" fill="#00e676" stroke="none"/>
+  </g>
+</svg>

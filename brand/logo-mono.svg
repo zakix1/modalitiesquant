@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512"
+     fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+     role="img" aria-label="ModalitiesQuant">
+  <!-- Single-colour mark. Inherits colour from CSS `color` — use on print, stamps,
+       embroidery, favicons, or anywhere the gradient version cannot survive. -->
+
+  <polygon points="256,26 474.74,184.93 391.19,442.07 120.81,442.07 37.26,184.93" stroke-width="12"/>
+
+  <g stroke-width="5" opacity=".55">
+    <path d="M256 46 V88"/>
+    <path d="M455.72 191.11 L415.78 204.09"/>
+    <path d="M379.43 425.89 L354.75 391.91"/>
+    <path d="M132.57 425.89 L157.25 391.91"/>
+    <path d="M56.28 191.11 L96.22 204.09"/>
+  </g>
+  <g fill="currentColor" stroke="none">
+    <circle cx="256" cy="26" r="11"/><circle cx="474.74" cy="184.93" r="11"/>
+    <circle cx="391.19" cy="442.07" r="11"/><circle cx="120.81" cy="442.07" r="11"/>
+    <circle cx="37.26" cy="184.93" r="11"/>
+  </g>
+
+  <polygon points="256,96 394.56,176 394.56,336 256,416 117.44,336 117.44,176" stroke-width="7"/>
+
+  <g stroke-width="3" opacity=".35">
+    <path d="M150 344 H372"/>
+    <path d="M186 344 v9 M240 344 v9 M294 344 v9 M348 344 v9"/>
+  </g>
+
+  <g stroke-width="7">
+    <path d="M132 208 C160 208 160 304 188 304 C216 304 216 208 244 208"/>
+    <path d="M132 304 C160 304 160 208 188 208 C216 208 216 304 244 304"/>
+  </g>
+  <g stroke-width="4.5" opacity=".6">
+    <path d="M132 208 V304"/><path d="M147 222 V290"/><path d="M188 208 V304"/>
+    <path d="M229 222 V290"/><path d="M244 208 V304"/>
+  </g>
+
+  <g stroke-width="7">
+    <path d="M244 208 Q268 210 273 251"/>
+    <path d="M244 304 Q268 302 273 261"/>
+  </g>
+  <circle cx="276" cy="256" r="9" fill="currentColor" stroke="none"/>
+
+  <path d="M276 256 L296 238 L316 252 L338 210 L358 190" stroke-width="8"/>
+  <polygon points="372,176 348,178 370,200" fill="currentColor" stroke="none"/>
+
+  <g stroke-width="3.5">
+    <path d="M292 292 V338"/><path d="M318 268 V324"/><path d="M344 242 V308"/>
+  </g>
+  <g fill="currentColor" stroke="none" opacity=".9">
+    <rect x="285" y="300" width="14" height="30" rx="3"/>
+    <rect x="311" y="276" width="14" height="40" rx="3"/>
+    <rect x="337" y="250" width="14" height="50" rx="3"/>
+  </g>
+</svg>

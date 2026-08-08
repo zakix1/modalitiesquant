@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 180" width="740" height="180"
+     role="img" aria-label="ModalitiesQuant — multi-modal biological and market analysis">
+  <!-- Horizontal lockup: mark + wordmark. Clear space around the whole lockup is
+       one hexagon-width (about 38px at this size) on every side.
+
+       The wordmark below is live text, so it renders with whatever font the
+       viewer has. Before sending this to a printer or a fabricator, open it in
+       Inkscape/Illustrator and convert the text to paths — otherwise it silently
+       falls back to a system sans and stops being your logo. -->
+  <defs>
+    <linearGradient id="mqwEdge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00c6ff"/><stop offset="1" stop-color="#1e88e5"/>
+    </linearGradient>
+    <linearGradient id="mqwRing" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7fdcff"/><stop offset="1" stop-color="#1e88e5"/>
+    </linearGradient>
+    <linearGradient id="mqwStrandA" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00c6ff"/><stop offset="1" stop-color="#5ce0a0"/>
+    </linearGradient>
+    <linearGradient id="mqwStrandB" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1e88e5"/><stop offset="1" stop-color="#00c6ff"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(14,16) scale(0.2891)" fill="none"
+     stroke-linecap="round" stroke-linejoin="round">
+    <polygon points="256,26 474.74,184.93 391.19,442.07 120.81,442.07 37.26,184.93"
+             stroke="url(#mqwEdge)" stroke-width="12"/>
+    <g stroke="url(#mqwEdge)" stroke-width="5" opacity=".55">
+      <path d="M256 46 V88"/><path d="M455.72 191.11 L415.78 204.09"/>
+      <path d="M379.43 425.89 L354.75 391.91"/><path d="M132.57 425.89 L157.25 391.91"/>
+      <path d="M56.28 191.11 L96.22 204.09"/>
+    </g>
+    <g fill="#00c6ff" stroke="none">
+      <circle cx="256" cy="26" r="11"/><circle cx="474.74" cy="184.93" r="11"/>
+      <circle cx="391.19" cy="442.07" r="11"/><circle cx="120.81" cy="442.07" r="11"/>
+      <circle cx="37.26" cy="184.93" r="11"/>
+    </g>
+    <polygon points="256,96 394.56,176 394.56,336 256,416 117.44,336 117.44,176"
+             stroke="url(#mqwRing)" stroke-width="7" opacity=".9"/>
+    <g stroke="#00c6ff" stroke-width="3" opacity=".28">
+      <path d="M150 344 H372"/><path d="M186 344 v9 M240 344 v9 M294 344 v9 M348 344 v9"/>
+    </g>
+    <g stroke-width="7">
+      <path d="M132 208 C160 208 160 304 188 304 C216 304 216 208 244 208" stroke="url(#mqwStrandA)"/>
+      <path d="M132 304 C160 304 160 208 188 208 C216 208 216 304 244 304" stroke="url(#mqwStrandB)"/>
+    </g>
+    <g stroke="#00c6ff" stroke-width="4.5" opacity=".62">
+      <path d="M132 208 V304"/><path d="M147 222 V290"/><path d="M188 208 V304"/>
+      <path d="M229 222 V290"/><path d="M244 208 V304"/>
+    </g>
+    <g stroke="#3ad39a" stroke-width="7">
+      <path d="M244 208 Q268 210 273 251"/><path d="M244 304 Q268 302 273 261"/>
+    </g>
+    <circle cx="276" cy="256" r="9" fill="#00e676" stroke="none"/>
+    <path d="M276 256 L296 238 L316 252 L338 210 L358 190" stroke="#00e676" stroke-width="8"/>
+    <polygon points="372,176 348,178 370,200" fill="#00e676" stroke="none"/>
+    <g stroke="#00e676" stroke-width="3.5">
+      <path d="M292 292 V338"/><path d="M318 268 V324"/><path d="M344 242 V308"/>
+    </g>
+    <g fill="#00e676" stroke="none" opacity=".92">
+      <rect x="285" y="300" width="14" height="30" rx="3"/>
+      <rect x="311" y="276" width="14" height="40" rx="3"/>
+      <rect x="337" y="250" width="14" height="50" rx="3"/>
+    </g>
+  </g>
+
+  <text x="186" y="88" font-family="'Space Grotesk','Inter',system-ui,sans-serif"
+        font-size="56" letter-spacing="-1">
+    <tspan fill="#e8eaed" font-weight="500">Modalities</tspan><tspan fill="#00c6ff" font-weight="700">Quant</tspan>
+  </text>
+  <text x="188" y="124" font-family="'Inter',system-ui,sans-serif" font-size="18"
+        fill="#90a4ae" letter-spacing="2.6">MULTI-MODAL BIOLOGICAL &amp; MARKET ANALYSIS</text>
+</svg>

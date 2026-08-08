@@ -128,11 +128,22 @@ img { display: block; max-width: 100%; }
   font-size: 20px;
   flex-shrink: 0;
 }
-.logo-icon {
-  font-size: 22px;
-  background: linear-gradient(135deg, #1e88e5, #00c6ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+/* The mark carries its own gradient, so there is nothing to clip here — the old
+   text-gradient trick existed only to colour the ⬡ glyph.
+
+   Two sizes, two files, on purpose. The nav sits at 34px, below the 48px floor
+   where the helix rungs merge into a smear, so it points at brand/favicon.svg —
+   the cut drawn for exactly that size. The footer has room for the full mark. */
+.logo-mark {
+  width: 34px;
+  height: 34px;
+  display: block;
+  flex-shrink: 0;
+}
+
+.footer-brand .logo-mark {
+  width: 46px;
+  height: 46px;
 }
 
 .nav-links {

@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <!-- ModalitiesQuant symbol set.
+       Same drawing language as the mark: 48×48 grid, 2.6 stroke, round caps,
+       currentColor. Use anywhere on the site with:
+
+           <svg class="icon"><use href="brand/symbols.svg#i-dna"/></svg>
+
+       and size/colour it in CSS (.icon { width:24px; height:24px; color:#00c6ff }).
+       Every symbol carries its own viewBox, so <use> needs no transform. -->
+
+  <symbol id="i-dna" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+          stroke-width="2.6" stroke-linecap="round">
+    <title>DNA / sequence</title>
+    <path d="M16 8 C30 12 30 20 16 24 C30 28 30 36 16 40"/>
+    <path d="M32 8 C18 12 18 20 32 24 C18 28 18 36 32 40"/>
+    <path d="M16 8 H32 M16 24 H32 M16 40 H32" opacity=".65"/>
+    <path d="M21 13 H27 M21 35 H27" opacity=".65"/>
+  </symbol>
+
+  <symbol id="i-molecule" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+          stroke-width="2.6" stroke-linejoin="round">
+    <title>Molecule / compound</title>
+    <polygon points="24,10 36.12,17 36.12,31 24,38 11.88,31 11.88,17"/>
+    <circle cx="24" cy="24" r="6.4" opacity=".5"/>
+    <g fill="currentColor" stroke="none">
+      <circle cx="24" cy="10" r="3"/><circle cx="36.12" cy="31" r="3"/><circle cx="11.88" cy="31" r="3"/>
+    </g>
+  </symbol>
+
+  <symbol id="i-candles" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+          stroke-width="2.6" stroke-linecap="round">
+    <title>Candlestick chart</title>
+    <path d="M8 40 H41" opacity=".45"/>
+    <path d="M15 19 V35 M24 13 V31 M33 8 V27"/>
+    <g fill="none">
+      <rect x="11.5" y="22" width="7" height="9" rx="1.6"/>
+      <rect x="20.5" y="16" width="7" height="10" rx="1.6"/>
+      <rect x="29.5" y="11" width="7" height="11" rx="1.6"/>
+    </g>
+  </symbol>
+
+  <symbol id="i-trend" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+          stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <title>Trend / forecast</title>
+    <path d="M9 8 V39 H41" opacity=".45"/>
+    <path d="M13 32 L21 24 L27 28 L36 14"/>
+    <path d="M28.5 13 H37 V21.5" opacity=".9"/>
+  </symbol>
+
+  <symbol id="i-cell" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+          stroke-width="2.6">
+    <title>Cell / assay</title>
+    <circle cx="24" cy="24" r="15"/>
+    <circle cx="24" cy="24" r="5.4" opacity=".75"/>
+    <g fill="currentColor" stroke="none" opacity=".8">
+      <circle cx="16" cy="16.5" r="1.9"/><circle cx="32" cy="18.5" r="1.9"/><circle cx="18.5" cy="32" r="1.9"/>
+    </g>
+  </symbol>
+
+  <symbol id="i-spectrum" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+          stroke-width="2.6" stroke-linecap="round">
+    <title>Spectrum / peaks</title>
+    <path d="M7 40 H41" opacity=".45"/>
+    <path d="M12 40 V28 M17 40 V18 M22 40 V33 M27 40 V10 M32 40 V24 M37 40 V31"/>
+  </symbol>
+
+  <symbol id="i-network" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+          stroke-width="2.6">
+    <title>Pathway / network</title>
+    <g opacity=".75">
+      <path d="M24 24 L12 14 M24 24 L36 12 M24 24 L14 36 M24 24 L35 34"/>
+      <path d="M12 14 L36 12" opacity=".45"/>
+    </g>
+    <g fill="currentColor" stroke="none">
+      <circle cx="24" cy="24" r="4.2"/><circle cx="12" cy="14" r="3.2"/>
+      <circle cx="36" cy="12" r="3.2"/><circle cx="14" cy="36" r="3.2"/><circle cx="35" cy="34" r="3.2"/>
+    </g>
+  </symbol>
+
+  <symbol id="i-distribution" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+          stroke-width="2.6" stroke-linecap="round">
+    <title>Distribution / significance</title>
+    <path d="M8 38 H41" opacity=".45"/>
+    <path d="M10 38 C18 38 18 12 24.5 12 C31 12 31 38 39 38"/>
+    <path d="M24.5 12 V38" stroke-dasharray="3 4" opacity=".7"/>
+  </symbol>
+
+  <symbol id="i-protein" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+          stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <title>Protein / peptide chain</title>
+    <path d="M9 32 L17 18 L25 32 L33 18 L40 27"/>
+    <g fill="currentColor" stroke="none">
+      <circle cx="9" cy="32" r="2.8"/><circle cx="17" cy="18" r="2.8"/><circle cx="25" cy="32" r="2.8"/>
+      <circle cx="33" cy="18" r="2.8"/><circle cx="40" cy="27" r="2.8"/>
+    </g>
+  </symbol>
+
+  <symbol id="i-offline" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+          stroke-width="2.6" stroke-linejoin="round">
+    <title>Offline / signed licence</title>
+    <path d="M24 6 L38 12 V24 C38 33 31.5 39.5 24 42 C16.5 39.5 10 33 10 24 V12 Z"/>
+    <path d="M18 24 L22.5 28.5 L31 19.5" stroke-linecap="round"/>
+  </symbol>
+</svg>
