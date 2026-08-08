@@ -5,7 +5,10 @@
   market trend line above ascending candlesticks.</desc>
 
   <defs>
-    <!-- Site palette: --accent2 #00c6ff, --accent #1e88e5, --green #00e676 -->
+    <!-- Site palette, straight from styles.css: accent2 #00c6ff, accent #1e88e5,
+         green #00e676. (Written without the CSS double-dash prefix on purpose —
+         XML comments may not contain a double hyphen, and an SVG that trips that
+         rule fails silently as a broken <img> rather than throwing.) -->
     <linearGradient id="mqEdge" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0"   stop-color="#00c6ff"/>
       <stop offset="1"   stop-color="#1e88e5"/>
