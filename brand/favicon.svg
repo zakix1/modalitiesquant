@@ -2,7 +2,12 @@
      role="img" aria-label="ModalitiesQuant">
   <!-- Small-size mark. The helix and candlesticks are dropped on purpose: below
        about 48px they collapse into noise. Pentagon, hexagon, rising line — the
-       three shapes that still read at 16px. -->
+       three shapes that still read at 16px.
+
+       The line only ever ascends. An earlier version stepped down before rising,
+       and at nav size that is a tick: the whole mark read as a "verified" badge
+       rather than a market moving up. Two segments, both climbing, with the
+       second steeper than the first, plus an arrowhead to fix the direction. -->
   <defs>
     <linearGradient id="mqFavEdge" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#00c6ff"/><stop offset="1" stop-color="#1e88e5"/>
@@ -19,7 +24,7 @@
     </g>
     <polygon points="32,12 49.32,22 49.32,42 32,52 14.68,42 14.68,22"
              stroke="#7fdcff" stroke-width="2.8"/>
-    <path d="M18 41 L27 33 L34 39 L44.5 25.5" stroke="#00e676" stroke-width="3.8"/>
-    <circle cx="45" cy="25" r="3.6" fill="#00e676" stroke="none"/>
+    <path d="M18 40.5 L28.5 34.5 L36.9 28" stroke="#00e676" stroke-width="3.8"/>
+    <polygon points="43.15,23.04 39.56,31.43 34.14,24.51" fill="#00e676" stroke="none"/>
   </g>
 </svg>
