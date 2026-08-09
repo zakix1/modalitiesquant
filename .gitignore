@@ -2,6 +2,10 @@
 PUBLISHING.md
 brand/preview.html
 
+# Build artefacts from the brand render scripts
+__pycache__/
+*.pyc
+
 # OS / editor noise
 Thumbs.db
 ehthumbs.db

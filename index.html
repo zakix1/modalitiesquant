@@ -12,6 +12,33 @@
   <link rel="icon" href="brand/favicon.ico" sizes="any" />
   <link rel="icon" href="brand/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="brand/apple-touch-icon.png" />
+
+  <!-- Link previews. These URLs must be absolute: a crawler fetching the page
+       has no base to resolve "brand/..." against, and a relative og:image is
+       simply dropped, leaving the preview blank. They therefore repeat
+       SITE_BASE from the script below — check_consistency.py compares them.
+
+       Order matters here too. The first og:image is the one most platforms
+       take, so the landscape card leads; the square is listed after it for
+       WhatsApp and anything else that prefers a near-square crop. -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="ModalitiesQuant" />
+  <meta property="og:url" content="https://zakix1.github.io/modalitiesquant/" />
+  <meta property="og:title" content="ModalitiesQuant — From biology to markets, in one desktop app" />
+  <meta property="og:description" content="Protein function prediction, medical diagnosis, DNA genomics and Nash-equilibrium market modelling in a single offline desktop app. One purchase, perpetual licence." />
+  <meta property="og:image" content="https://zakix1.github.io/modalitiesquant/brand/social/og-landscape-1200x628.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="628" />
+  <meta property="og:image:alt" content="The ModalitiesQuant mark: a DNA double helix resolving into a rising market trend line." />
+  <meta property="og:image" content="https://zakix1.github.io/modalitiesquant/brand/social/og-square-1200x1200.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="1200" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ModalitiesQuant — From biology to markets, in one desktop app" />
+  <meta name="twitter:description" content="Protein function prediction, medical diagnosis, DNA genomics and Nash-equilibrium market modelling in a single offline desktop app." />
+  <meta name="twitter:image" content="https://zakix1.github.io/modalitiesquant/brand/social/og-landscape-1200x628.png" />
+
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
